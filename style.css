@@ -2,20 +2,24 @@ html {
   box-sizing: border-box;
 }
 
-*,*:before, *:after{
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
-body{
-  background: #2C2141;
+body {
+  background: #2c2141;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.main{
-  background: #E5E5E5;
+.main {
+  padding: 32px;
+  background: #e5e5e5;
   border-radius: 16px;
   width: 624px;
   margin: 16px;
@@ -23,9 +27,34 @@ body{
   align-items: space-around;
 }
 
-.main__left{
-  margin: 16px;
+.person {
 }
-.main__right{
-  margin: 16px;
+
+.person__name {
+  font-size: 36px;
+  margin: 0;
+  font-weight: normal;
+}
+.person__work {
+  margin: 0;
+  font-style: italic;
+  color: #545454;
+  font-size: 18px;
+}
+
+.person__description {
+  font-size: 16px;
+  line-height: 22px;
+  text-align: justify;
+}
+
+.special__orange {
+  color: #ed6d05;
+  font-weight: normal;
+}
+
+.person__link {
+  color: #e20613;
+  font-weight: normal;
+  text-decoration: none;
 }
